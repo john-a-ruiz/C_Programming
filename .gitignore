@@ -1,0 +1,13 @@
+*.metadata
+build
+Debug
+*.cproject
+*.project
+*.xcodeproj
+*.o
+*.obj
+*.csh
+*.app
+*.bin
+*.out
+bin
