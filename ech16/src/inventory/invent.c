@@ -38,7 +38,7 @@ int main(void)
 
 	for (;;)
 	{
-
+		printf("i - insert, s - search, u - update, c - cost, p - print, $ - cost, q - quit");
 		scanf(" %c", &code);
 		while (getchar() != '\n')
 			;

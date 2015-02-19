@@ -11,3 +11,4 @@ Debug
 *.bin
 *.out
 bin
+/chp02
