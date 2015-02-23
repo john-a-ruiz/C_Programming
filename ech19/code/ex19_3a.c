@@ -33,7 +33,6 @@ struct
 	};
 
 void readline(char array[], int size);
-void clearline(char array[], int size);
 void execute_command(char array[]);
 
 int q[Q_SIZE] = {0};
@@ -57,20 +56,10 @@ int main(void)
 	return (EXIT_SUCCESS);
 }
 
-void clearline(char array[], int size)
-{
-	int i;
-
-	for (i = 0; i < size; i++)
-		array[i] = '\0';
-}
-
 void readline(char array[], int size)
 {
 	char ch = 0;
 	int i = 0;
-
-	clearline(array, size);
 
 	while (isspace(ch = getchar()))
 			;
