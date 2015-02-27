@@ -4,7 +4,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "stack.h"
+#include <string.h>
+#include "stack_a.h"
 
 int main(void)
 {
@@ -24,9 +25,23 @@ int main(void)
 				printf("What do you want me to push: ");
 				scanf("%d", &data);
 				push(&info, data);
+				printf("%d has been pushed.\n\n", info.contents[(info.top)-1]);
 				break;
+			case 'o':
+				printf("%d has been popped.\n\n", pop(&info));
+				break;
+			case 'e':
+				make_empty(&info);
+				printf("The stack......is now empty.\n\n");
+				break;
+			case 'c':
+				printf("The stack %s empty.\n\n", is_empty(&info) ? "is" : "is not");
+				break;
+			case 'q':
+				printf("Well if you wanna be THAT way!!");
+				return 0;
 			default:
-				printf("no, no, No, NO, NOOOOOOO!!!!....Stupid\n");
+				printf("no, no, No, NO, NOOOOOOO!!!!....Stupid\n\n");
 		}
 	}
 

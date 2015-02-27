@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "stack.h"
+#include "stack_a.h"
 
 PRIVATE int is_full(Stack *s);
 PRIVATE void initialize(Stack *s);
@@ -35,7 +35,7 @@ PUBLIC void push(Stack *s, int i)
 {
 	if (is_full(s))
 	{
-		printf("Can't do it!! The stack is full son");
+		printf("Can't do it!! The stack is full son.\n Bye!!");
 		exit (EXIT_FAILURE);
 	}
 
@@ -45,7 +45,7 @@ PUBLIC int pop(Stack *s)
 {
 	if (is_empty(s))
 	{
-		printf("Can't do it!! The Stack is empty son");
+		printf("Can't do it!! The Stack is empty son.\n Bye!!");
 		exit (EXIT_FAILURE);
 	}
 
